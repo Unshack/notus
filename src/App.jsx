@@ -6,12 +6,15 @@ import Landing from "./views/Landing";
 import Profile from "./views/Profile";
 import Login from "./views/auth/Login";
 import Register from "./views/auth/Register";
+import Dashboard from "./views/admin/Dashboard";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path='/admin' element={<Admin />} />
+        <Route element={<Admin />}>
+          <Route path='/admin/dashboard' element={<Dashboard />} />
+        </Route>
         <Route element={<Auth />}>
           <Route path='/auth/login' element={<Login />} />
           <Route path='/auth/register' element={<Register />} />
