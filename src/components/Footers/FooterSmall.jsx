@@ -29,7 +29,7 @@ const FooterSmall = (props) => {
                     href='https://www.marcko.com?ref=nr-footer-small'
                     className='text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3'
                   >
-                    Creative Tim
+                    Design Essentials
                   </a>
                 </li>
                 <li>
