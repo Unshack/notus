@@ -21,5 +21,6 @@ warn - Update your configuration file to silence this warning.
 warn - As of Tailwind CSS v3.0, `coolGray` has been renamed to `gray`.
 warn - Update your configuration file to silence this warning.
 
-warn - As of Tailwind CSS v3.0, `slate` has been renamed to `slate`.
+warn - As of Tailwind CSS v3.0, `Blue Gray` to slate
+ has been renamed to `slate`.
 warn - Update your configuration file to silence this warning.

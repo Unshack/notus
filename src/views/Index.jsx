@@ -1,8 +1,6 @@
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
-
-// import Footer from "components/Footers/Footer.js";
 import IndexNavbar from "../components/Navbars/IndexNavbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +10,8 @@ import {
   faNewspaper,
   faSitemap,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Footer from "../components/Footers/Footer";
 
 export default function Index() {
   return (
@@ -638,7 +638,10 @@ export default function Index() {
             </div>
 
             <div className='w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative'>
-              <i className='fab fa-github text-slate-700 absolute -top-150-px -right-100 left-auto opacity-80 text-55'></i>
+              <FontAwesomeIcon
+                icon={faGithub}
+                className='fab fa-github text-slate-700 absolute -top-150-px -right-100 left-auto opacity-80 text-55'
+              />
             </div>
           </div>
         </div>
@@ -703,7 +706,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
