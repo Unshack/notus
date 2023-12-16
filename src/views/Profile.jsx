@@ -5,6 +5,7 @@ import {
   faBuildingColumns,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../components/Footers/Footer";
 
 export default function Profile() {
   return (
@@ -142,7 +143,7 @@ export default function Profile() {
           </div>
         </section>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
