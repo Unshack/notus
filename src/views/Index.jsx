@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 
 // import Footer from "components/Footers/Footer.js";
 import IndexNavbar from "../components/Navbars/IndexNavbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCodeBranch,
+  faCompassDrafting,
+  faFileLines,
+  faNewspaper,
+  faSitemap,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Index() {
   return (
@@ -33,7 +41,7 @@ export default function Index() {
                 <a
                   href='https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-index'
                   target='_blank'
-                  className='get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150'
+                  className='get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-sky-500 active:bg-sky-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150'
                 >
                   Get started
                 </a>
@@ -79,7 +87,7 @@ export default function Index() {
         <div className='container mx-auto'>
           <div className='flex flex-wrap items-center'>
             <div className='w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32'>
-              <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-lightBlue-500'>
+              <div className='relative flex flex-col min-w-0 break-words bg-sky-500 w-full mb-6 shadow-lg rounded-lg'>
                 <img
                   alt='...'
                   src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80'
@@ -94,10 +102,10 @@ export default function Index() {
                   >
                     <polygon
                       points='-30,95 583,95 583,65'
-                      className='text-lightBlue-500 fill-current'
+                      className='text-sky-500 fill-current'
                     ></polygon>
                   </svg>
-                  <h4 className='text-xl font-bold text-white'>
+                  <h4 className='text-xl bg-sky-500 font-bold text-white'>
                     Great for your awesome project
                   </h4>
                   <p className='text-md font-light mt-2 text-white'>
@@ -116,7 +124,10 @@ export default function Index() {
                   <div className='relative flex flex-col mt-4'>
                     <div className='px-4 py-5 flex-auto'>
                       <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white'>
-                        <i className='fas fa-sitemap'></i>
+                        <FontAwesomeIcon
+                          icon={faSitemap}
+                          className='fas fa-sitemap'
+                        />
                       </div>
                       <h6 className='text-xl mb-1 font-semibold'>
                         CSS Components
@@ -130,7 +141,10 @@ export default function Index() {
                   <div className='relative flex flex-col min-w-0'>
                     <div className='px-4 py-5 flex-auto'>
                       <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white'>
-                        <i className='fas fa-drafting-compass'></i>
+                        <FontAwesomeIcon
+                          icon={faCompassDrafting}
+                          className='fas fa-drafting-compass'
+                        />
                       </div>
                       <h6 className='text-xl mb-1 font-semibold'>
                         JavaScript Components
@@ -146,7 +160,10 @@ export default function Index() {
                   <div className='relative flex flex-col min-w-0 mt-4'>
                     <div className='px-4 py-5 flex-auto'>
                       <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white'>
-                        <i className='fas fa-newspaper'></i>
+                        <FontAwesomeIcon
+                          icon={faNewspaper}
+                          className='fas fa-newspaper'
+                        />
                       </div>
                       <h6 className='text-xl mb-1 font-semibold'>Pages</h6>
                       <p className='mb-4 text-slate-500'>
@@ -158,7 +175,10 @@ export default function Index() {
                   <div className='relative flex flex-col min-w-0'>
                     <div className='px-4 py-5 flex-auto'>
                       <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white'>
-                        <i className='fas fa-file-alt'></i>
+                        <FontAwesomeIcon
+                          icon={faFileLines}
+                          className='fas fa-file-alt'
+                        />
                       </div>
                       <h6 className='text-xl mb-1 font-semibold'>
                         Documentation
@@ -179,7 +199,10 @@ export default function Index() {
           <div className='flex flex-wrap items-center'>
             <div className='w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48'>
               <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white'>
-                <i className='fas fa-sitemap text-xl'></i>
+                <FontAwesomeIcon
+                  icon={faSitemap}
+                  className='fas fa-sitemap text-xl'
+                />
               </div>
               <h3 className='text-3xl mb-2 font-semibold leading-normal'>
                 CSS Components
@@ -290,7 +313,7 @@ export default function Index() {
                     href='https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=vtw-index'
                     target='_blank'
                   >
-                    <div className='bg-lightBlue-500 shadow-lg rounded-lg text-center p-8 mt-8'>
+                    <div className='bg-sky-500 shadow-lg rounded-lg text-center p-8 mt-8'>
                       <img
                         alt='...'
                         className='shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white'
@@ -369,7 +392,10 @@ export default function Index() {
 
             <div className='w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48'>
               <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white'>
-                <i className='fas fa-drafting-compass text-xl'></i>
+                <FontAwesomeIcon
+                  icon={faCompassDrafting}
+                  className='fas fa-drafting-compass text-xl'
+                />
               </div>
               <h3 className='text-3xl mb-2 font-semibold leading-normal'>
                 Javascript Components
@@ -426,7 +452,10 @@ export default function Index() {
             <div className='w-full md:w-5/12 ml-auto px-12 md:px-4'>
               <div className='md:pr-12'>
                 <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white'>
-                  <i className='fas fa-file-alt text-xl'></i>
+                  <FontAwesomeIcon
+                    icon={faFileLines}
+                    className='fas fa-file-alt text-xl'
+                  />
                 </div>
                 <h3 className='text-3xl font-semibold'>
                   Complex Documentation
@@ -574,7 +603,10 @@ export default function Index() {
           <div className='flex flex-wrap justify-center'>
             <div className='w-full md:w-5/12 px-12 md:px-4 ml-auto mr-auto md:mt-64'>
               <div className='text-slate-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white'>
-                <i className='fas fa-code-branch text-xl'></i>
+                <FontAwesomeIcon
+                  icon={faCodeBranch}
+                  className='fas fa-code-branch text-xl'
+                />
               </div>
               <h3 className='text-3xl mb-2 font-semibold leading-normal text-white'>
                 Open Source
@@ -653,7 +685,7 @@ export default function Index() {
                 <a
                   href='https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-index'
                   target='_blank'
-                  className='get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150'
+                  className='get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-sky-500 active:bg-sky-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150'
                 >
                   Get started
                 </a>

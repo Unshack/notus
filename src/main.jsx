@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Index from "./views/Index.jsx";
 import Landing from "./views/Landing.jsx";
+import Profile from "./views/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/landing",
     element: <Landing />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
 ]);
 
