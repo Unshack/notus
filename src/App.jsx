@@ -7,6 +7,7 @@ import Profile from "./views/Profile";
 import Login from "./views/auth/Login";
 import Register from "./views/auth/Register";
 import Dashboard from "./views/admin/Dashboard";
+import Settings from "./views/admin/Settings";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route element={<Admin />}>
           <Route path='/admin/dashboard' element={<Dashboard />} />
+          <Route path='/admin/settings' element={<Settings />} />
         </Route>
         <Route element={<Auth />}>
           <Route path='/auth/login' element={<Login />} />
